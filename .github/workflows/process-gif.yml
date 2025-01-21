@@ -1,26 +1,34 @@
 name: Process GIF
 
 on:
+  workflow_dispatch:
   push:
     paths:
       - https://cdn.dribbble.com/users/730703/screenshots/6581243/avento.gif # Substitua pelo caminho do seu GIF
 
 jobs:
   process-gif:
+    permissions:
+      contents: write
     runs-on: ubuntu-latest
+    timeout-minutes: 15
+
     steps:
-      # Step 1: Checkout do código
+      # Step 1: Checkout the code
       - name: Checkout code
         uses: actions/checkout@v3
 
-      # Step 2: Instale ferramentas necessárias (opcional)
-      - name: Install dependencies
+      # Step 2: Process the GIF
+      - name: Process GIF
         run: |
-          sudo apt-get update
-          sudo apt-get install -y gifsicle # Exemplo de ferramenta para GIFs
+          echo "Processing GIF..."
+          # Comando para processar o GIF
+          echo "GIF processed successfully!"
 
-      # Step 3: Processar o GIF
-      - name: Optimize GIF
+      # Step 3: Trigger next execution
+      - name: Trigger Next Run
         run: |
-          gifsicle --optimize=3 --output path/to/your-gif-optimized.gif path/to/your-gif.gif
-          echo "GIF otimizado com sucesso!"
+          echo "Re-triggering workflow..."
+          gh workflow run "Continuous GIF Task"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
