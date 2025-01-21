@@ -2,14 +2,13 @@ name: Process GIF
 
 on:
   workflow_dispatch:
-  push:
-    paths:
-      - https://cdn.dribbble.com/users/730703/screenshots/6581243/avento.gif # Substitua pelo caminho do seu GIF
+
 
 jobs:
   process-gif:
     permissions:
       contents: write
+      actions: write    # Add this line to grant permission to trigger workflows
     runs-on: ubuntu-latest
     timeout-minutes: 15
 
