@@ -1,9 +1,5 @@
 name: Process GIF
 
-on:
-  workflow_dispatch:
-
-
 jobs:
   process-gif:
     permissions:
