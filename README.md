@@ -12,6 +12,8 @@
 
 #
 
+<img align="right" height="190px" scr="./src/walking.gif">
+
 <h3 align="left">My Stack!</h3>
 
 <div align="left" style="diplay: inline_block;">
@@ -36,7 +38,6 @@
     </a>
 </div>    
 
-<img align="right" height="190px" scr="./src/walking">
 
 
 
