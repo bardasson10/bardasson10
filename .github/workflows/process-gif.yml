@@ -29,6 +29,6 @@ jobs:
       - name: Trigger Next Run
         run: |
           echo "Re-triggering workflow..."
-          gh workflow run "Continuous GIF Task"
+          gh workflow run "Process GIF"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
