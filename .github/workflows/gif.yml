@@ -1,0 +1,26 @@
+name: Process GIF
+
+on:
+  push:
+    paths:
+      - path/to/your-gif.gif # Substitua pelo caminho do seu GIF
+
+jobs:
+  process-gif:
+    runs-on: ubuntu-latest
+    steps:
+      # Step 1: Checkout do código
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # Step 2: Instale ferramentas necessárias (opcional)
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y gifsicle # Exemplo de ferramenta para GIFs
+
+      # Step 3: Processar o GIF
+      - name: Optimize GIF
+        run: |
+          gifsicle --optimize=3 --output path/to/your-gif-optimized.gif path/to/your-gif.gif
+          echo "GIF otimizado com sucesso!"
