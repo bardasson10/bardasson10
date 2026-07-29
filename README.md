@@ -1,3 +1,6 @@
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=112&color=28a1af&customColorList=33&section=header"/>
+
+
 
 
 <div align="center">
@@ -7,7 +10,7 @@
 
 #
 
-<img align="right" alt="Coder GIF" height=210 width=350 src="https://cdn.dribbble.com/users/730703/screenshots/6581243/avento.gif" />
+<img align="right" alt="Coder GIF" height=210 style='border:1px solid #000000 border-radius: 14px 1px 0px 0px' width=fit src="https://cdn.dribbble.com/users/730703/screenshots/6581243/avento.gif" />
 
 <h3 align="left">My Stack!</h3>
 
@@ -43,3 +46,6 @@
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/bardasson10/bardasson10/output/github-contribution-grid-snake-dark.svg">
   <img align="center" alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/bardasson10/bardasson10/output/github-contribution-grid-snake.svg">
 </picture>
+
+
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&height=112&color=28a1af&customColorList=33&section=footer"/>
