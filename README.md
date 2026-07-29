@@ -8,6 +8,7 @@
     <a href="https://github.com/bardasson10">
     <img height="200em" src="https://github-readme-stats.vercel.app/api?username=bardasson10&show_icons=true&theme=transparent"/>
     <img height="200em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=bardasson10&layout=compact&show_icons=true&theme=transparent&langs_count=16"/>
+    </a>   
 </div>
 
 #
